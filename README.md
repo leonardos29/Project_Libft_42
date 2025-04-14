@@ -11,7 +11,7 @@ The **Libft** project implements essential C Standard Library functions. It focu
 
 ## Implemented Functions
 
-  ### 🧠 Memory Management
+### Memory Management 🧠
 
 These functions help you manage memory in your programs:
 
@@ -23,7 +23,7 @@ These functions help you manage memory in your programs:
 - **`ft_memcmp`**: Compares two blocks of memory.
 - **`ft_calloc`**: Allocates memory and initializes it to zero.
 
-### 📝 String Manipulation 
+### String Manipulation 📝
 
 Functions for handling and manipulating strings:
 
@@ -40,7 +40,7 @@ Functions for handling and manipulating strings:
 - **`ft_strstr`**: Locates the first occurrence of a substring within a string.
 - **`ft_strsplit`**: Splits a string into an array of substrings based on a delimiter.
 
-###  🔤 Character Checks
+### Character Checks 🔤
 
 These functions are used to check specific types of characters:
 
@@ -52,7 +52,7 @@ These functions are used to check specific types of characters:
 - **`ft_tolower`**: Converts a character to lowercase.
 - **`ft_toupper`**: Converts a character to uppercase.
 
-### 🧰 Other Utilities 
+### Other Utilities 🧰
 
 - **`ft_atoi`**: Converts a string to an integer.
 - **`ft_itoa`**: Converts an integer to a string.
