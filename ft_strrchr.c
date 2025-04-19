@@ -6,32 +6,32 @@
 /*   By: leonasil <leonasil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 17:34:46 by leonasil          #+#    #+#             */
-/*   Updated: 2025/04/16 18:18:42 by leonasil         ###   ########.fr       */
+/*   Updated: 2025/04/19 19:12:27 by leonasil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	const char	*start;
 
-	start = str;
-	while (*str != '\0')
+	start = s;
+	while (*s != '\0')
 	{
-		str ++;
+		s ++;
 	}
 	if ((char)c == '\0')
 	{
-		return ((char *)str);
+		return ((char *)s);
 	}
-	while (str >= start)
+	while (s >= start)
 	{
-		if (*str == (char)c)
+		if (*s == (char)c)
 		{
-			return ((char *)str);
+			return ((char *)s);
 		}
-		str--;
+		s--;
 	}
 	return (NULL);
 }
