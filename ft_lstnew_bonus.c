@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leonasil <leonasil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 20:09:09 by leonasil          #+#    #+#             */
-/*   Updated: 2025/04/23 20:29:17 by leonasil         ###   ########.fr       */
+/*   Updated: 2025/04/25 04:38:36 by leonardo_ou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
