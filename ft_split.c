@@ -6,7 +6,7 @@
 /*   By: leonasil <leonasil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 18:16:21 by leonasil          #+#    #+#             */
-/*   Updated: 2025/04/21 20:56:46 by leonasil         ###   ########.fr       */
+/*   Updated: 2025/04/26 18:12:50 by leonasil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,9 +78,9 @@ static int	create_arr(char	**arr, const char *s, char separator)
 		{
 			if (allocate_memory(arr, i, len + 1))
 				return (1);
+			ft_strlcpy(arr[i], w_start, len + 1);
+			i++;
 		}
-		ft_strlcpy(arr[i], w_start, len + 1);
-		i++;
 	}
 	return (0);
 }
