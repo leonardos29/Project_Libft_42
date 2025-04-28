@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leonasil <leonasil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 12:14:38 by leonasil          #+#    #+#             */
-/*   Updated: 2025/04/20 13:30:58 by leonasil         ###   ########.fr       */
+/*   Updated: 2025/04/28 01:20:22 by leonardo_ou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,7 @@ size_t len)
 	if (start > s_len)
 		return (ft_strdup(""));
 	else if (start + len > s_len)
-	{
 		len = s_len - start;
-	}
 	subst = malloc((len + 1) * sizeof(char));
 	if (!subst)
 		return (NULL);

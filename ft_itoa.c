@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leonasil <leonasil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 20:08:33 by leonasil          #+#    #+#             */
-/*   Updated: 2025/04/21 21:24:16 by leonasil         ###   ########.fr       */
+/*   Updated: 2025/04/28 01:25:15 by leonardo_ou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@ static size_t	count_len(long n)
 	return (len);
 }
 
-static char	*int_to_str(char *str, size_t position, long n)
+void	int_to_str(char *str, size_t position, long n)
 {
 	str[position] = '\0';
 	if (n == 0)
 	{
 		str[0] = '0';
-		return (str);
+		return ;
 	}
 	if (n < 0)
 	{
@@ -50,7 +50,6 @@ static char	*int_to_str(char *str, size_t position, long n)
 		str[--position] = (n % 10) + '0';
 		n /= 10;
 	}
-	return (str);
 }
 
 char	*ft_itoa(int n)
@@ -70,7 +69,7 @@ char	*ft_itoa(int n)
 /*
 int main()
 {
-	char	*str = ft_itoa(0);
+	char	*str = ft_itoa(-35);
     printf("%s \n",str);
 	free(str);
 }

@@ -6,28 +6,30 @@
 /*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 03:52:17 by leonardo_ou       #+#    #+#             */
-/*   Updated: 2025/04/18 04:27:26 by leonardo_ou      ###   ########.fr       */
+/*   Updated: 2025/04/28 02:09:42 by leonardo_ou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+#include "libft.h"
+
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t			i;
 	unsigned char	*ptr;
+	size_t			total_size;
+	size_t			size_max;
 
-	ptr = malloc(nmemb * size);
-	if (!ptr)
-	{
+	size_max = (size_t)-1;
+	if (nmemb == 0 || size == 0)
+		return (malloc(0));
+	if (nmemb > size_max / size)
 		return (NULL);
-	}
-	i = 0;
-	while (i < nmemb * size)
-	{
-		ptr[i] = 0;
-		i++;
-	}
+	total_size = nmemb * size;
+	ptr = malloc(total_size);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, total_size);
 	return (ptr);
 }
 /*

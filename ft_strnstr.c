@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leonasil <leonasil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 01:58:35 by leonardo_ou       #+#    #+#             */
-/*   Updated: 2025/04/19 19:15:09 by leonasil         ###   ########.fr       */
+/*   Updated: 2025/04/28 01:16:51 by leonardo_ou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	i = 0;
 	if (*little == '\0')
-	{
 		return ((char *)big);
-	}
 	while ((i < len) && big[i] != '\0')
 	{
 		j = 0;
@@ -30,13 +28,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			j++;
 		}
 		if (little[j] == '\0')
-		{
 			return ((char *)&big[i]);
-		}
 		else
-		{
 			i++;
-		}
 	}
 	return (NULL);
 }

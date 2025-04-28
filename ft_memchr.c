@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: leonasil <leonasil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: leonardo_ouza <leonardo_ouza@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 09:57:08 by leonasil          #+#    #+#             */
-/*   Updated: 2025/04/18 10:14:18 by leonasil         ###   ########.fr       */
+/*   Updated: 2025/04/28 01:11:51 by leonardo_ou      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n--)
 	{
 		if (ptr[i] == (unsigned char)c)
-		{
 			return ((void *)&ptr[i]);
-		}
 		i++;
 	}
 	return (NULL);
