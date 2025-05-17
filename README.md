@@ -65,7 +65,7 @@ These functions are used to check specific types of characters:
 To install and compile the project, follow these steps:
 
 ```bash
-git clone https://github.com/yourusername/libft.git
+git clone https://github.com/leonardos29/Project_Libft_42.git
 cd libft
 make
 
